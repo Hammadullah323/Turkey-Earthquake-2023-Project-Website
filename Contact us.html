@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact Us.Css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo"><img src="images/Logo.jpg" alt="Logo"></div>
+            <li> <a href="Home.html">Home</a> </li>
+            <li> <a href="About.html">About</a> </li>
+            <li> <a href="Donations.html">Donations</a> </li>
+            <li> <a href="Videos.html">Videos</a> </li>
+            <li> <a href="Contact Us.html">Contact Us</a> </li>
+        </ul>
+
+        <div class="rightNav v-class">
+            <input type="text" name="search" id="search">
+            <button id="iy" class="btn btn-sm" onclick="home()">Search</button>
+        </div>
+        <div class="earth">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+               <a href="https://goo.gl/maps/qsh1KQ56cazTh3Bt9"><img src="Images/location.png"></a> 
+                <p>Hagia Sophia, Istanbul, Turkiye</p>
+                <img src="Images/call.png">
+                <p>+92 317 7680865</p>
+                <img src="Images/mail.png">
+                <p>hammadullahktk01@gmail.com</p>
+
+                 <div class="links">
+                <p>Connect With Us</p>
+                <a href="https://www.facebook.com/"><img src="Images/Facebook.png"></a>
+                <a href="https://www.instagram.com"><img src="Images/Insta.png"></a>
+                <a href="https://twitter.com/login"><img src="Images/Twitter.png"></a>
+                <a href="https://www.pinterest.com"><img src="Images/Pinterest.png"></a>
+                <a href="https://www.linkedin.com"><img src="Images/Linkedin.png"></a>
+            </div>
+            </div>
+            <hr>
+            
+            <h2 class="headin2">Send a Message</h2>
+
+            
+            <form class="forms">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        
+        </div>
+
+      
+    </section>
+    <footer class="background">
+        <p class="textfooter">Copyright &copy; 2023 - www.iDonate.com - All Rights Reserved</p>
+    </footer>
+
+    <script src="Home.js">
+    </script>
+</body>
+
+</html>

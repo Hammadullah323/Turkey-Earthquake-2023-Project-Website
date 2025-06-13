@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  width: 20%;display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.logo img{
+  width: 50%;
+  border: 3px solid white;
+  border-radius: 70px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  
+}
+
+.nav-list{
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li{
+  list-style: none;
+  padding: 23px;
+  
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.nav-list li a:hover{
+  text-decoration: none;
+  color: red;
+  
+}
+
+.rightNav{
+  width: 30%;
+  text-align: right;
+  padding: 0 23px;
+}
+
+#search{
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid gray;
+  border-radius: 9px;
+}
+
+.background{
+  background: rgba(0, 0, 0, 0.7) url("../images/Earthquake.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstSection{
+  width: auto;
+  display: inline-grid table-row;
+}
+.btn{
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px
+}
+
+.btn-sm{
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+.earth{
+  display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 5px;
+   top: 15px;
+
+}
+.line{
+   width: 33px;
+   background-color: white;
+   height: 4px;
+   margin: 5px 3px;
+}
+
+.textfooter{
+  text-align: center;
+  padding: 6px 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 120px;
+    display: flex;
+}
+.container h2{
+color: aliceblue;
+font-size: 35px;
+font-family: serif;}
+
+.contact-details{
+  margin: auto;
+  color: aliceblue;
+  width: 500px;
+  font-size: 30px;
+}
+.contact-details img{
+  background: aliceblue;
+    border: 2px solid green;
+    border-radius: 50px;
+    width: 50px;
+}
+.contact-details p{
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: aliceblue;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-family: serif;
+}
+
+
+hr{
+  margin: auto;
+  height: 475px;
+}
+.forms{
+  padding: inherit;
+}
+.form-group input{
+width: 100%;
+    padding: 4px 29px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group textarea{width: 100%;
+    padding: 4px 29px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+.headin2{
+margin: inherit;
+width: 101px;
+margin-left: 53px;
+}
+button {
+  padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: fangsong;
+    font-size: 25px;
+
+
+}
+
+.links a img{
+  background: yellow;
+    border: aliceblue;
+    margin-right: 20px;
+}
+
+
+
+
+@media only screen and (max-width:1078px){
+
+  .navbar{
+    height: 450px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+}
+
+.nav-list{
+    flex-direction: column;
+}
+.rightNav{
+    text-align: center;
+}
+#search{
+  width: 100%;
+}
+.earth{
+  display: block;
+}
+.h-nav{
+  height: 72px;
+}
+.v-class{
+  opacity: 0;
+}
+.firstSection{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+    flex-direction: column;
+}
+hr{
+  height: auto;
+  width: 520px;
+  margin-top: 60px;
+}
+
+}
+
+
+

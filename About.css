@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url("../images/Earthquake.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 70px;
+}
+.nav-list li{
+    list-style: none;
+    padding: 23px;
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: red;
+    
+}
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url("../images/Earthquake.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+    display: inline-grid;
+}
+.firstdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    min-height: 70vh;
+    border-radius: 10px;
+    background-color: rgba(45, 23, 56, 0.7);
+    
+}
+.image{
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 70%;
+ height: 90%;
+ object-fit: cover;
+ border-radius: 10px;
+}
+.text{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text h1{
+    font-size: 55px;
+    padding: 10px 0px;
+}
+
+.text p{
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.text a{
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.textfooter{
+    text-align: center;
+    padding: 6px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "Assalam-o-Alaikom! This is our page. Our team consists of two people(Hammadullah & Sharjeel Iqbal). We are here to collect the donations from people through this website and send these items to our brothers of Turkiye.";}
+    50%{content: "السلام علیکم! یہ ہمارا صفحہ ہے. ہماری ٹیم دو افراد (حماد اللہ اور شرجیل اقبال) پر مشتمل ہے۔ ہم اس ویب سائٹ کے ذریعے لوگوں سے عطیات جمع کرنے اور ان اشیاء کو ترکی کے اپنے بھائیوں کو بھیجنے کے لئے یہاں ہیں."}
+    100%{content: "Assalam-o-Alaikom! Bu bizim sayfamız. Ekibimiz iki kişiden oluşmaktadır (Hammadullah &; Sharjeel Iqbal). Bu web sitesi üzerinden insanlardan bağış toplamak ve bu eşyaları Türkiye'deki kardeşlerimize göndermek için buradayız.";}
+}
+
+
+
+@media only screen and (max-width:1276px){
+
+    .navbar{
+        height: 450px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+    }
+    .rightNav{
+        text-align: center;
+    }
+
+    .earth{
+        display: none;
+         position: absolute;
+         cursor: pointer;
+         right: 5px;
+         top: 15px;
+    
+    }
+    .line{
+         width: 33px;
+         background-color: white;
+         height: 4px;
+         margin: 5px 3px;
+    }
+
+    .earth{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .firstdiv{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstSection{
+        display: table-row;
+    }
+    .text{
+        text-align: center;
+    }
+    
+}

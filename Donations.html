@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Us</title>
+    <link rel="stylesheet" href="Donations.css">
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo"><img src="images/Logo.jpg" alt="Logo"></div>
+            <li> <a href="Home.html">Home</a> </li>
+            <li> <a href="About.html">About</a> </li>
+            <li> <a href="Donations.html">Donations</a> </li>
+            <li> <a href="Videos.html">Videos</a> </li>
+            <li> <a href="Contact Us.html">Contact Us</a> </li>
+        </ul>
+
+        <div class="rightNav v-class">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm" onclick="Donation()">Search</button>
+        </div>
+        <div class="earth">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+
+        <div class="container">
+            <form action="">
+             <div class="row">
+                 <div class="col">
+                     <h3 class="title">Donate us</h3>
+ 
+                     <div class="inputBox">
+                         <span>Full name:</span>
+                         <input type="text" placeholder="Full Name" required>
+                     </div>
+                     <div class="inputBox">
+                         <span>Email:</span>
+                         <input type="email" placeholder="Email" required>
+                     </div>
+                     <div class="inputBox">
+                         <span>address:</span>
+                         <input type="text" placeholder="address" required>
+                     </div>
+                     <div class="inputBox">
+                         <span>City:</span>
+                         <input type="text" placeholder="City" required>
+                     </div>
+                     <div class="flex">
+                         <div class="inputBox">
+                             <span>State:</span>
+                             <input type="text" placeholder="State" required>
+                         <div class="inputBox">
+                             <span>zip code:</span>
+                             <input type="text" placeholder="Zip code" required>
+                         </div>
+                         </div>
+                         </div>
+                     </div>
+ 
+                     <div class="col">
+                         <h3 class="title">Payment</h3>
+                         
+                         <div class="inputBox">
+                             <span>Cards accepted:</span>
+                             <img src="Images/Banks.png">
+                         </div>
+                         <div class="inputBox">
+                             <span>Name on card:</span>
+                             <input type="text" placeholder="Name on Card" required>
+                         </div>
+                         <div class="inputBox">
+                             <span>Credit card number:</span>
+                             <input type="number" placeholder="Card number" required>
+                         </div>
+                         <div class="inputBox">
+                             <span>exp month:</span>
+                             <input type="number" placeholder="Exp month" required>
+                         </div>
+                         <div class="flex">
+                             <div class="inputBox">
+                                 <span>Exp year:</span>
+                                 <input type="number" placeholder="Exp year" required>
+                             </div>
+                             <div class="inputBox">
+                                 <span>CVV:</span>
+                                 <input type="text" placeholder="CVV" required>
+                             </div>
+                             </div>
+                         </div>
+                 </div>
+             <input type="submit" value="Donate now" class="submit-btn" required>
+         </div>
+            </form>
+         </div>
+
+
+    </section>
+    <footer class="background">
+        <p class="textfooter">Copyright &copy; 2023 - www.iDonate.com - All Rights Reserved</p>
+      </footer>
+      
+      <script src="Home.js"></script>
+</body>
+</html>
